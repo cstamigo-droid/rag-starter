@@ -1,0 +1,31 @@
+[project]
+name = "rag-starter"
+version = "0.1.0"
+description = "Production-ready RAG starter — chat with your documents, with citations. MCP + HTTP API."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "mcp>=1.2.0",
+    "pydantic>=2.6",
+    "python-dotenv>=1.0",
+    "chromadb>=0.5.0",
+    "pypdf>=4.0",
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+]
+
+[project.optional-dependencies]
+answer = ["anthropic>=0.39"]
+openai = ["openai>=1.0"]
+
+[project.scripts]
+rag-starter = "rag_starter.server:main"
+rag-starter-api = "rag_starter.api:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rag_starter*"]
