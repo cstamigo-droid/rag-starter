@@ -51,6 +51,7 @@ Restart Claude Desktop, then: *"Ingest the folder ./data"*, then *"What's the re
 | `rag_ingest(path)` | `POST /ingest` | Index a file or folder (txt/md/pdf). |
 | `rag_search(query, k)` | `POST /search` | Top-k cited passages (keyless). |
 | `rag_answer(query, k)` | `POST /answer` | Cited answer (with key) or passages (without). |
+| — | `GET /health` | Liveness + indexed-chunk count + embedding backend. |
 
 ## Configuration
 Everything is in `config.py` (or env / `.env` — see `.env.example`): chunk size & overlap,
