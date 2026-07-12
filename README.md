@@ -1,5 +1,7 @@
 # rag-starter — chat with your documents (RAG), with citations
 
+[![rag-starter MCP server](https://glama.ai/mcp/servers/cstamigo-droid/rag-starter/badges/score.svg)](https://glama.ai/mcp/servers/cstamigo-droid/rag-starter)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE) [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB.svg?logo=python&logoColor=white)](https://www.python.org) [![MCP](https://img.shields.io/badge/Model_Context_Protocol-server-7C3AED.svg)](https://modelcontextprotocol.io)
 
 A production-ready starter that turns a folder of documents into a **cited Q&A
